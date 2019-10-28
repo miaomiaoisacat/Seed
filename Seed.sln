@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seed.Api", "Seed.Api\Seed.Api.csproj", "{ABC0A4A0-4724-47EB-B197-A37282A6EE24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seed.Api", "Seed.Api\Seed.Api.csproj", "{ABC0A4A0-4724-47EB-B197-A37282A6EE24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seed.Core", "Seed.Core\Seed.Core.csproj", "{50F8F00D-6EA2-4414-89D8-427908D78632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seed.Core", "Seed.Core\Seed.Core.csproj", "{50F8F00D-6EA2-4414-89D8-427908D78632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seed.DataMySql", "Seed.DataMySql\Seed.DataMySql.csproj", "{2F13244B-F1EF-42A2-A121-C77E15509388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seed.DataMySql", "Seed.DataMySql\Seed.DataMySql.csproj", "{2F13244B-F1EF-42A2-A121-C77E15509388}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

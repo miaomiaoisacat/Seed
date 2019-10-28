@@ -9,4 +9,12 @@
     <PackageReference Include="MySql.Data" Version="8.0.18" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\Bases\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Seed.Core\Seed.Core.csproj" />
+  </ItemGroup>
+
 </Project>
