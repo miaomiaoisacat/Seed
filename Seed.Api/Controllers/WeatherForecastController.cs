@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Seed.DataMySql;
 
 namespace Seed.Api.Controllers
 {
@@ -26,6 +27,7 @@ namespace Seed.Api.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            UnitOfWork a = new UnitOfWork(new ConFactory());
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

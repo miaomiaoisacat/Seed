@@ -1,4 +1,6 @@
-﻿using System.Data.Common;
+﻿using System.Collections.Generic;
+using System.Data.Common;
+using System.Text;
 
 namespace Seed.Core.Models
 {
@@ -17,23 +19,19 @@ namespace Seed.Core.Models
         {
             var arrProps = typeof(T).GetProperties();
             var str = new StringBuilder();
+            var lstParams = new List<DbParameter>();
 
             for (int i = 0; i < arrProps.Length; i++)
             {
                 if (null == arrProps[i].GetValue(model))
                     continue;
                 if (str.Length == 0)
-                {
-                    str.Append(" where " + arrProps[i].Name);
-
-                    str.Append(" where ");
-                    str.Append();
-                }
+                    str.Append(" where " + arrProps[i].Name + "=@" + arrProps[i].Name);
+                else
+                    str.Append(" and " + arrProps[i].Name + "=@" + arrProps[i].Name);
             }
 
-
-
-            return str;
+            return (str.ToString(),null);
         }
         public abstract (string, DbParameter[]) BuildCountSql<T>(T model) where T : class, new();
         protected abstract void IniBaseSelectSql();

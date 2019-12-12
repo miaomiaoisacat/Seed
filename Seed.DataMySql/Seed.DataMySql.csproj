@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Seed.Core\Seed.Core.csproj" />
+    <ProjectReference Include="..\Seed.Core\Seed.Core111.csproj" />
   </ItemGroup>
 
 </Project>

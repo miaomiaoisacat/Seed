@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Seed.Core\Seed.Core.csproj" />
+    <ProjectReference Include="..\Seed.Core\Seed.Core111.csproj" />
+    <ProjectReference Include="..\Seed.DataMySql\Seed.DataMySql.csproj" />
   </ItemGroup>
 
 </Project>
